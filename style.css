@@ -1,0 +1,66 @@
+body{
+  background-image: url(krishna.png);
+  background-size: cover;
+}
+/* Reset some default spacing */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/* Centering form between header and footer */
+.center-section {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  min-height: calc(100vh - 140px); /* subtract header and footer height */
+  padding: 20px;
+}
+
+/* Box styling for the form */
+#first {
+  width: 300px;
+  padding: 20px;
+  color: red;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color:blue;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="reset"] {
+  background-color:green;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  opacity: 0.9;
+  background-color:violet;
+  color: black;
+}
